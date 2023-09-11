@@ -9,12 +9,12 @@ function App() {
     { id: 2, title: "Se7en" },
     { id: 3, title: "Inception" }
   ]);
-
+  console.log(Object.keys(movies))
   return (
     <div>
       <NavBar />
       <Switch>
-        <Route path="/movies">
+        <Route  path="/movies">
           <MoviesPage movies={movies} />
         </Route>
         <Route exact path="/">
